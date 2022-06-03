@@ -1,0 +1,22 @@
+<div class="counter__container flex flex-center flex-column">
+  <div class="counter__heading">
+    <h1>Word Counter</h1>
+  </div>
+  <div class="counter__field">
+    <textarea
+      name="content"
+      class="counter__input"
+      [ngModel]="text"
+      placeholder="Plak tekst hier..."
+      (ngModelChange)="getText($event)"
+    ></textarea>
+  </div>
+  <div class="counter__statistics flex flex-space-between flex-row">
+    <div class="counter__chars">
+      <p>{{ amountOfChars }} characters</p>
+    </div>
+    <div class="counter__words">
+      <p>{{ amountOfWords }} words</p>
+    </div>
+  </div>
+</div>

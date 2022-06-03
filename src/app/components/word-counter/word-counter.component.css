@@ -1,0 +1,78 @@
+/* Utility classes */
+
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Specific CSS */
+.counter__container {
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.counter__container > .counter__field {
+  width: 80%;
+}
+
+.counter__container > .counter__heading > h1 {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #b2fc4b;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.counter__container > .counter__field > .counter__input {
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+  color: #fff;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.25rem;
+  background-color: #212324;
+  border-radius: 4px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.counter__statistics > * {
+  color: #b2fc4b;
+  background: #2e4b04;
+  padding: 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px #b2fc4b1b;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.counter__statistics > * > p {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.5rem;
+}
